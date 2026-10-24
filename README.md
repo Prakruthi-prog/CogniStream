@@ -1,41 +1,53 @@
+
 # CogniStream
-Developer Flow-State &amp; Cognitive Load Analytics
 
-Week 1
+Developer Flow-State & Cognitive Load Analytics.
 
-Requirements and data preparation
-- Understand the project objective.
-- Set up Python, VS Code, Git, and GitHub.
-- Understand the sample dataset.
-- Clean and validate data.
-  Deliverable: working dataset and data-understanding notes.
+## Technologies
+- Python
+- Pandas and NumPy
+- Matplotlib and Seaborn
+- Streamlit
+- Git and GitHub
 
+## Run the project
 
-Week 2
+Install dependencies:
 
-Exploratory data analysis
-- Calculate focus ratios and summary statistics.
-- Analyse interruptions and task switching.
-- Create charts and record observations.
-  Deliverable: analysis code and findings report.
+```bash
+python -m pip install -r requirements.txt
+```
 
+Generate sample data:
 
+```bash
+python src/generate_data.py
+```
 
-Week 3
+Clean data:
 
-Dashboard development
-- Create KPI metrics and charts.
-- Add filters and data download.
-- Test the dashboard with different selections.
-  Deliverable: interactive dashboard.
+```bash
+python src/clean_data.py
+```
 
+Analyse data:
 
+```bash
+python src/analyze.py
+```
 
-Week 4
+Generate charts:
 
-Final submission
-- Complete project documentation.
-- Prepare the project report and PPT.
-- Test the code and rehearse the demonstration.
-- Push final changes to GitHub.
-  Deliverable: source code, report, documentation, PPT, and demonstration.
+```bash
+python src/visualizations.py
+```
+
+Launch dashboard:
+
+```bash
+streamlit run app.py
+```
+
+## Data disclaimer
+The supplied dataset is synthetic and intended for
+educational demonstration only.
